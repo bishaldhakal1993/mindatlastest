@@ -1,0 +1,16 @@
+{
+  "name": "bishal/mindatlastest",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Bishal Dhakal",
+      "email": "bishaldhakal1993@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "./app"
+    }
+  },
+  "require": {}
+}
