@@ -143,7 +143,7 @@ if ($search !== '') {
                 <div class="pagination">
                     <?php
                     if ($page > 1) {
-                        echo '<a href="?per_page=' . $perPage . '&page=' . $page - 1 . $queryString . '">&laquo;</a>';
+                        echo '<a href="?per_page=' . $perPage . '&page=' . ($page - 1) . $queryString . '">&laquo;</a>';
                     }
 
                     // Chunk of 5 pages for each pagination display.
@@ -154,7 +154,7 @@ if ($search !== '') {
                         echo '<a href="?per_page=' . $perPage . '&page=' . $i . $queryString . '" ' . ($page === $i ? 'class="active">' : '>') . $i . '</a>';
                     }
                     if ($page <  $pageCount) {
-                        echo '<a href="?per_page=' . $perPage . '&page=' . $page + 1 . $queryString . '">&raquo;</a>';
+                        echo '<a href="?per_page=' . $perPage . '&page=' . ($page + 1) . $queryString . '">&raquo;</a>';
                     }
                     ?>
                 </div>
